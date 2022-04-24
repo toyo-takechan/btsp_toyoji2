@@ -1,3 +1,11 @@
- <footer class="bg-secondary text-center text-light p-5 mt-5 fixed-bottom">
+ <%# <footer class="bg-secondary text-center text-light p-5 mt-5 fixed-bottom">
       (c) btsp2.com
+</footer> %>
+<footer class="container-fluid bg-secondary fluid fixed-bottom">
+  <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+      <li><%=link_to "Home", root_path, class:"nav-link px-2 text-white" %></li>
+      <li><%=link_to "(c) btsp2.com","#", class:"nav-link px-2 text-white" %></li>
+      <li><%=link_to "FAQs","#", class:"nav-link px-2 text-white" %></li>
+      <li><%=link_to "About","#", class:"nav-link px-2 text-white" %></li>
+  </ul>
 </footer>

@@ -1,3 +1,17 @@
 // Custom bootstrap variables must be set or imported *before* bootstrap.
 // @import "bootstrap-sprockets";
 @import "bootstrap";
+
+// ここからhome
+
+.home-top{
+  &_image {
+    text-align: center;
+    width: 70%;
+    margin-left: 200px;
+    border-radius: 5%;
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+}
