@@ -2,6 +2,8 @@ Rails.application.routes.draw do
   root 'home#top'
   get '/practice', to: 'home#practice'
   get '/enjoy',    to: 'home#enjoy'
+  get '/ruby',     to: 'home#ruby'
+  get '/dot',      to: 'home#dot'
   resources :users
   resources :microposts
   # root 'users#index'

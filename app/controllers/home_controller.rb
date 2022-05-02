@@ -7,4 +7,10 @@ class HomeController < ApplicationController
 
   def enjoy
   end
+
+  def ruby
+  end
+
+  def dot
+  end
 end
