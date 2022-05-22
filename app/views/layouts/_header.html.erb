@@ -18,7 +18,12 @@
         </form>
 
         <div class="text-end">
-          <button type="button" class="btn btn-outline-light me-2"><%=link_to "Login", login_path %></button>
+          <% if logged_in? %>
+            <button type="button" class="btn btn-outline-light me-2"><%=link_to "Logout", logout_path, data: { "turbo-method": :delete } %></button>
+          <% else %>
+            <button type="button" class="btn btn-outline-light me-2"><%=link_to "Login", login_path %></button>
+
+          <% end %>
           <button type="button" class="btn btn-warning"><%=link_to "Sign-up", new_user_path %></button>
         </div>
       </div>

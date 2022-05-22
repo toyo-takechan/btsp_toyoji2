@@ -5,10 +5,17 @@ module ApplicationHelper
   end
 
   def current_user
-    session[:user_id] = user.id
+    if session[:user_id]
+    @current_user ||= User.find_by(id: session[:user_id])
+    end
   end
 
-  def log_in?
+  def logged_in?
     !current_user.nil?
+  end
+
+  def log_out
+    session.delete(:user_id)
+    @current_user = nil
   end
 end
